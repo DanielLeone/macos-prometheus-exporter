@@ -1,7 +1,7 @@
 set -o errexit -o xtrace
 
 outputPath='./bin/macos_prometheus_exporter'
-if [ -b "$1" ]; then
+if [ -n "$1" ]; then
   outputPath=$1
 fi
 
